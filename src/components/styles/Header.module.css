@@ -1,9 +1,9 @@
 .panelBg {
-    width: 100%;
-    height: 5.938rem;
-    padding: 1.438rem 6.188rem 1.688rem 6.25rem;
-    background-color: var(--white-two);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 100%;
+  height: 5.938rem;
+  padding: 1.438rem 6.188rem 1.688rem 6.25rem;
+  background-color: var(--white-two);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
