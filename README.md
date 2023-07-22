@@ -1,70 +1,161 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+  <img width="64" height="64" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-library-science-flaticons-lineal-color-flat-icons-2.png" alt="external-library-science-flaticons-lineal-color-flat-icons-2"/>
+  </div>
 
-## Available Scripts
+#  **Bookstore**
+**Bookstore** is a simple website created using React JS.
 
-In the project directory, you can run:
+---
+  <br/>
+  <br/>
+  <br/>
+</div>
 
-### `npm start`
+<!-- TABLE OF CONTENTS -->
+## <b>Table of Contents 📗
+- [Built With 🛠](#built-with)
+- [Tech Stack](#tech-stack)
+- [Key Features 🏷️](#key-features)
+- [Getting Started 💻](#getting-started)
+- [Prerequisites 🧱](#prerequisites)
+- [Setup ⚙️](#setup)
+- [Install 🏗️](#install)
+- [Usage 📂](#usage)
+- [Author 👤](#author)
+- [Contributing 🤝](#contributing)
+- [Show your support 🌟](#support)
+- [Acknowledgements 🙏](#acknowledgements)
+- [License 📝](#license)
+</b><br><br><br><br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
+<!-- BUILT WITH -->
+## **Built With 🛠**<a name="built-with"></a><br>
+### Tech Stack <a name="tech-stack"></a>
+  <ul>
+    <li><a href="https://reactnative.dev/">React JS</a></li><br>
+    <li><a href="https://webpack.js.org">Webpack</a></li>
+  </ul>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br>
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- KEY FEATURES -->
+### **Key Features 🏷️** <a name="key-features"></a>
 
-### `npm run build`
+- _Make simple calculations_
+- _Read a random math-related quote._
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+<!-- GETTING STARTED -->
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Getting Started 💻<a name="getting-started"></a>
+<!-- PREREQUISITIES -->
+## **Prerequisites 🧱**<a name="prerequisites"></a>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+In order to run this project you need:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- A Github account
+- Node JS
+- A web browser to view output e.g [Microsoft Edge](https://www.microsoft.com/en-us/edge).
+- An IDE e.g [Visual studio code](https://code.visualstudio.com/).
+- [A terminal](https://code.visualstudio.com/docs/terminal/basics).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<br>
 
-## Learn More
+---
+<!-- SETUP -->
+## **Setup ⚙️**<a name="setup"></a>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Clone this repository:<br>
+```sh
+  git clone https://github.com/lily4178993/my-book-store.git
+  cd my-book-store
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
 
-### Code Splitting
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
+<!-- INSTALL -->
+## **Install 🏗️**<a name="install"></a>
 
-### Analyzing the Bundle Size
+Run project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```sh
+  npm install
+```
 
-### Making a Progressive Web App
+---
+<!-- USAGE -->
+## **Usage 📂**<a name="usage"></a>
+Open page in browser
+```sh
+  $ npm start
+```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
+<!-- AUTHOR -->
+## **Author 👤**<a name="author"></a>
+You can reach me using these following links:
+- Twitter: [@nelly_telli](https://twitter.com/nelly_telli)
+- LinkedIn: [Nelly T.](https://www.linkedin.com/in/nelly-t-330414266/)
 
-### Advanced Configuration
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<br>
 
-### Deployment
+---
+<!-- CONTRIBUTING -->
+## **Contributing 🤝**<a name="contributing"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+If you have suggestions 📝, ideas 🤔, or bug reports 🐛, please feel free to open an [issue](https://github.com/lily4178993/Math-Magicians/issues) on GitHub.
+Remember, every contribution, no matter how big or small, makes a difference.
 
-### `npm run build` fails to minify
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<br>
+
+---
+<!-- SUPPORT -->
+## **Show your support 🌟**<a name="support"></a>
+
+Thank you for taking the time to explore my GitHub project! Your support means a lot to me. If you find my project valuable and would like to contribute, here are a few ways you can support me:
+
+ - **Star the project ⭐️**
+
+ - **Fork the project 🍴 🎣**
+
+ - **Share with others 🗺️**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<br>
+
+---
+<!-- ACKNOWLEDGEMENTS -->
+## **Acknowledgments 🙏**<a name="acknowledgements"></a>
+
+I would like to express my sincere gratitude to [Microverse](https://github.com/microverseinc), the dedicated reviewers, and my coding partners. Your unwavering support, and feedbacks have played an immense role in making this journey a resounding success. Thank you for being an integral part of my achievements.
+
+I would also like to thank <a target="_blank" href="https://icons8.com">Icons8</a> for all the images and icons I used in this project.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+---
+<!-- LICENCE -->
+## <b>License 📝</b><a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
