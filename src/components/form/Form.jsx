@@ -12,7 +12,7 @@ function Form() {
             <option value="category1">category1</option>
             <option value="category2">category2</option>
         </select>
-        <button type="submit" title="Add Book"  className={FormCSS.Rectangle2}>Add Book</button>
+        <button type="submit" title="Add Book"  className={FormCSS.Rectangle2}>ADD BOOK</button>
       </form>
     </div>
   );
