@@ -1,0 +1,9 @@
+.BookstoreCMS {
+    padding: 5.313rem 3.75rem;
+    background-color: var(--pale-grey);
+  }
+
+  .Line {
+    margin: 1.813rem 0;
+    border: solid 1px var(--white-three);
+  }
