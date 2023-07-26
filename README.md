@@ -46,8 +46,9 @@
 <!-- KEY FEATURES -->
 ### **Key Features 🏷️** <a name="key-features"></a>
 
-- _Make simple calculations_
-- _Read a random math-related quote._
+- _Display a list of books_
+- _Add a book_
+- _Remove a selected book_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <br>
