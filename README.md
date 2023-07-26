@@ -24,6 +24,7 @@
 - [Install 🏗️](#install)
 - [Usage 📂](#usage)
 - [Author 👤](#author)
+- [Future Features 🔭](f-features)
 - [Contributing 🤝](#contributing)
 - [Show your support 🌟](#support)
 - [Acknowledgements 🙏](#acknowledgements)
@@ -113,6 +114,17 @@ You can reach me using these following links:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<br>
+
+---
+
+<!-- FUTURE FEATURES -->
+### **Future Features 🔭** <a name="f-features"></a>
+
+ _Implement a filtering feature with a hardcoded list of categories. Clicking on a category label should update the books list and show only the books of a given category._
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <br>
 
 ---
