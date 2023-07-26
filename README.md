@@ -24,7 +24,7 @@
 - [Install 🏗️](#install)
 - [Usage 📂](#usage)
 - [Author 👤](#author)
-- [Future Features 🔭](f-features)
+- [Future Features 🔭](#f-features)
 - [Contributing 🤝](#contributing)
 - [Show your support 🌟](#support)
 - [Acknowledgements 🙏](#acknowledgements)
