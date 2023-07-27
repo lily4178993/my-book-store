@@ -1,12 +1,13 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import { booksSelector } from 'redux/books/booksSlice';
 import BooksCardCSS from 'components/styles/BooksCard.module.css';
 
 const BooksCard = () => {
-  const booksData = useSelector((state) => state.book.books);
+  const { books, otherInfos } = useSelector(booksSelector);
   return (
     <>
-      {booksData.map((book) => (
+      {books.map((book) => (
         <div
           key={book.id}
           className={BooksCardCSS.LessonPanel}
@@ -27,14 +28,16 @@ const BooksCard = () => {
             <div className={BooksCardCSS.CompletionPercentageBox}>
               <div className={BooksCardCSS.Oval2} />
               <div>
-                <span className={BooksCardCSS.PercentComplete}>{book.percentageCompletion}</span>
+                <span className={BooksCardCSS.PercentComplete}>
+                  {otherInfos.percentageCompletion}
+                </span>
                 <span className={BooksCardCSS.Completed}>Completed</span>
               </div>
               <div className={BooksCardCSS.Line2} />
             </div>
             <div>
               <span className={BooksCardCSS.CurrentChapter}>Current Chapter</span>
-              <span className={BooksCardCSS.CurrentLesson}>{book.CurrentChapter}</span>
+              <span className={BooksCardCSS.CurrentLesson}>{otherInfos.currentChapter}</span>
               <button type="button" title="Update Progress" className={BooksCardCSS.Rectangle2}>Update progress</button>
             </div>
           </div>
