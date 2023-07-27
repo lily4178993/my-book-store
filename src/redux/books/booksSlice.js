@@ -1,7 +1,33 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  books: [],
+  books:
+  [
+    {
+      item_id: 'item1',
+      title: 'The Great Gatsby',
+      author: 'John Smith',
+      category: 'Fiction',
+      CurrentChapter: 'Chapter 17',
+      percentageCompletion: '65%',
+    },
+    {
+      item_id: 'item2',
+      title: 'Anna Karenina',
+      author: 'Leo Tolstoy',
+      category: 'Fiction',
+      CurrentChapter: 'Chapter 3: "A Lesson Learned"',
+      percentageCompletion: '8%',
+    },
+    {
+      item_id: 'item3',
+      title: 'The Selfish Gene',
+      author: 'Richard Dawkins',
+      category: 'Nonfiction',
+      CurrentChapter: 'Introduction',
+      percentageCompletion: '0%',
+    },
+  ],
 };
 
 const booksSlice = createSlice({
