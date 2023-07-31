@@ -49,21 +49,21 @@ function Form() {
           onChange={(event) => setCategory(event.target.value)}
           className={FormCSS.LessonPanel2}
         >
-          <option value="business">Business</option>
-          <option value="computer-science">Computer Science</option>
-          <option value="education">Education</option>
-          <option value="engineering">Engineering</option>
-          <option value="fiction">Fiction</option>
-          <option value="humanities">Humanities</option>
-          <option value="JMSC">Journalism, Media Studies & Communication</option>
-          <option value="law">Law</option>
-          <option value="medecine">Medecine</option>
-          <option value="mathematics">Mathematics</option>
-          <option value="natural-sciences">Natural Sciences</option>
-          <option value="non-fiction">Non Fiction</option>
-          <option value="romancce">Romance</option>
-          <option value="social-sciences">Social Sciences</option>
-          <option value="student-success">Student Success</option>
+          <option value="Business">Business</option>
+          <option value="Computer Science">Computer Science</option>
+          <option value="Education">Education</option>
+          <option value="Engineering">Engineering</option>
+          <option value="Fiction">Fiction</option>
+          <option value="Humanities">Humanities</option>
+          <option value="Journalism, Media Studies & Communication">Journalism, Media Studies & Communication</option>
+          <option value="Law">Law</option>
+          <option value="Medecine">Medecine</option>
+          <option value="Mathematics">Mathematics</option>
+          <option value="Natural-sciences">Natural Sciences</option>
+          <option value="Non-fiction">Non Fiction</option>
+          <option value="Romancce">Romance</option>
+          <option value="Social-sciences">Social Sciences</option>
+          <option value="Student-success">Student Success</option>
         </select>
         <Button />
       </form>
