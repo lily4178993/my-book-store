@@ -26,12 +26,3 @@ form * {
   border: solid 1px var(--white-three);
   background-color: var(--white-two);
 }
-
-.Rectangle2 {
-  width: 11.5rem;
-  height: 2.813rem;
-  padding: 0.801rem 1.188rem 0.886rem 1.375rem;
-  border-radius: 3px;
-  color: var(--white);
-  background-color: var(--azure);
-}
