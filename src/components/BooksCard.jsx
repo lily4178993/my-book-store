@@ -1,11 +1,13 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import Button from 'components/buttons/RemoveButton';
 import BooksCardCSS from 'components/styles/BooksCard.module.css';
 
 const BooksCard = () => {
   const percentageCompletion = Math.round(Math.random() * 100);
   const currentChapter = Math.round(Math.random() * 50);
   const booksData = useSelector((state) => state.book.books);
+
   return (
     <>
       {booksData.map((bookData) => (
@@ -20,9 +22,21 @@ const BooksCard = () => {
               <p className={BooksCardCSS.Author}>{bookData.author}</p>
             </div>
             <div className={BooksCardCSS.BookActionBox}>
-              <button type="button" title="Comment" className={BooksCardCSS.BookAction}>Comment</button>
-              <button type="button" title="Edit" className={BooksCardCSS.BookAction}>Edit</button>
-              <button type="button" title="Remove" className={BooksCardCSS.BookAction}>Remove</button>
+              <button
+                type="button"
+                title="Comment"
+                className={BooksCardCSS.BookAction}
+              >
+                Comment
+              </button>
+              <button
+                type="button"
+                title="Edit"
+                className={BooksCardCSS.BookAction}
+              >
+                Edit
+              </button>
+              <Button id={bookData.item_id} />
             </div>
           </div>
           <div className={BooksCardCSS.LessonPanel2}>
@@ -43,7 +57,13 @@ const BooksCard = () => {
                 Chapter &nbsp;
                 {currentChapter}
               </span>
-              <button type="button" title="Update Progress" className={BooksCardCSS.Rectangle2}>Update progress</button>
+              <button
+                type="button"
+                title="Update Progress"
+                className={BooksCardCSS.Rectangle2}
+              >
+                Update progress
+              </button>
             </div>
           </div>
         </div>
