@@ -1,6 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
-import { v4 as uuid } from 'uuid';
 
 const initialState = {
   loading: false,
@@ -15,24 +14,29 @@ export const fetchBooks = createAsyncThunk('book/fetchBooks', () => axios
   .get(`${baseUrl}${apiId}/books`)
   .then((response) => response.data));
 
+export const addBook = createAsyncThunk('book/addBook', (data) => axios
+  .post(`${baseUrl}${apiId}/books`, data)
+  .then((response) => response.data));
+
 const booksSlice = createSlice({
   name: 'book',
   initialState,
   reducers: {
-    addBook: (state, action) => {
-      const newBook = {
-        item_id: uuid(),
-        title: action.payload.title,
-        author: action.payload.author,
-        category: action.payload.category,
-      };
-      state.books.push(newBook);
-    },
     removeBook: (state, action) => {
       state.books = state.books.filter((book) => book.item_id !== action.payload);
     },
   },
   extraReducers: (builder) => {
+    builder.addCase(addBook.pending, (state) => {
+      state.loading = true;
+    });
+    builder.addCase(addBook.fulfilled, (state) => {
+      state.loading = false;
+    });
+    builder.addCase(addBook.rejected, (state, action) => {
+      state.loading = false;
+      state.error = action.error.message;
+    });
     builder.addCase(fetchBooks.pending, (state) => {
       state.loading = true;
     });
@@ -50,4 +54,4 @@ const booksSlice = createSlice({
 });
 
 export default booksSlice.reducer;
-export const { addBook, removeBook } = booksSlice.actions;
+export const { removeBook } = booksSlice.actions;
