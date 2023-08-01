@@ -14,71 +14,86 @@ const BooksCard = () => {
   }, [dispatch]);
   const booksData = useSelector((state) => state.book);
 
+  if (booksData.loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (booksData.error) {
+    return (
+      <div>
+        Error:
+        {booksData.error}
+      </div>
+    );
+  }
+
+  if (!booksData.books || Object.keys(booksData.books).length === 0) {
+    return <div>There are no books</div>;
+  }
   return (
     <>
-      {booksData.loading && <div>Loading...</div>}
-      {!booksData.loading && booksData.error ? (
-        <div>{`Error: ${booksData.error}`}</div>
-      ) : null}
-      {!booksData.loading && booksData.books.length
-        ? (booksData.map((bookData) => (
-          <div
-            key={bookData.item_id}
-            className={BooksCardCSS.LessonPanel}
-          >
-            <div>
+      {Object.values(booksData.books).map((bookArray) => (
+        <div key={bookArray[0].item_id}>
+          {bookArray.map((bookData) => (
+            <div
+              key={bookData.item_id}
+              className={BooksCardCSS.LessonPanel}
+            >
               <div>
-                <p className={BooksCardCSS.SchoolOf}>{bookData.category}</p>
-                <h2 className={BooksCardCSS.Title}>{bookData.title}</h2>
-                <p className={BooksCardCSS.Author}>{bookData.author}</p>
-              </div>
-              <div className={BooksCardCSS.BookActionBox}>
-                <button
-                  type="button"
-                  title="Comment"
-                  className={BooksCardCSS.BookAction}
-                >
-                  Comment
-                </button>
-                <button
-                  type="button"
-                  title="Edit"
-                  className={BooksCardCSS.BookAction}
-                >
-                  Edit
-                </button>
-                <Button id={bookData.item_id} />
-              </div>
-            </div>
-            <div className={BooksCardCSS.LessonPanel2}>
-              <div className={BooksCardCSS.CompletionPercentageBox}>
-                <div className={BooksCardCSS.Oval2} />
                 <div>
-                  <span className={BooksCardCSS.PercentComplete}>
-                    {percentageCompletion}
-                    %
-                  </span>
-                  <span className={BooksCardCSS.Completed}>Completed</span>
+                  <p className={BooksCardCSS.SchoolOf}>{bookData.category}</p>
+                  <h2 className={BooksCardCSS.Title}>{bookData.title}</h2>
+                  <p className={BooksCardCSS.Author}>{bookData.author}</p>
                 </div>
-                <div className={BooksCardCSS.Line2} />
+                <div className={BooksCardCSS.BookActionBox}>
+                  <button
+                    type="button"
+                    title="Comment"
+                    className={BooksCardCSS.BookAction}
+                  >
+                    Comment
+                  </button>
+                  <button
+                    type="button"
+                    title="Edit"
+                    className={BooksCardCSS.BookAction}
+                  >
+                    Edit
+                  </button>
+                  <Button id={bookData.item_id} />
+                </div>
               </div>
-              <div>
-                <span className={BooksCardCSS.CurrentChapter}>Current Chapter</span>
-                <span className={BooksCardCSS.CurrentLesson}>
-                  Chapter &nbsp;
-                  {currentChapter}
-                </span>
-                <button
-                  type="button"
-                  title="Update Progress"
-                  className={BooksCardCSS.Rectangle2}
-                >
-                  Update progress
-                </button>
+              <div className={BooksCardCSS.LessonPanel2}>
+                <div className={BooksCardCSS.CompletionPercentageBox}>
+                  <div className={BooksCardCSS.Oval2} />
+                  <div>
+                    <span className={BooksCardCSS.PercentComplete}>
+                      {percentageCompletion}
+                      %
+                    </span>
+                    <span className={BooksCardCSS.Completed}>Completed</span>
+                  </div>
+                  <div className={BooksCardCSS.Line2} />
+                </div>
+                <div>
+                  <span className={BooksCardCSS.CurrentChapter}>Current Chapter</span>
+                  <span className={BooksCardCSS.CurrentLesson}>
+                    Chapter &nbsp;
+                    {currentChapter}
+                  </span>
+                  <button
+                    type="button"
+                    title="Update Progress"
+                    className={BooksCardCSS.Rectangle2}
+                  >
+                    Update progress
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-        ))) : null}
+          ))}
+        </div>
+      ))}
     </>
   );
 };
