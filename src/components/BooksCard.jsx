@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import Button from 'components/buttons/RemoveButton';
+/* import Button from 'components/buttons/RemoveButton'; */
 import BooksCardCSS from 'components/styles/BooksCard.module.css';
 import { fetchBooks } from 'redux/books/booksSlice';
 
@@ -12,31 +12,35 @@ const BooksCard = () => {
   useEffect(() => {
     dispatch(fetchBooks());
   }, [dispatch]);
-  const booksData = useSelector((state) => state.book);
+  /* const booksData = useSelector((state) => state.book); */
+  const { /* loading, */ books, error } = useSelector((state) => state.book);
 
-  if (booksData.loading) {
+  /* if (booksData.loading) {
     return <div>Loading...</div>;
-  }
+  } */
 
-  if (booksData.error) {
+  if (error) {
     return (
       <div>
         Error:
-        {booksData.error}
+        {error}
       </div>
     );
   }
 
-  if (!booksData.books || Object.keys(booksData.books).length === 0) {
+  /* if (!booksData.books || Object.keys(booksData.books).length === 0) {
     return <div>There are no books</div>;
-  }
+  } */
+  const handleDelete = (key, title) => {
+    console.log(`Deleted book with title: ${title}, key: ${key}`);
+  };
   return (
     <>
-      {Object.values(booksData.books).map((bookArray) => (
-        <div key={bookArray[0].item_id}>
-          {bookArray.map((bookData) => (
+      {Object.keys(books).map((key) => (
+        <div key={key}>
+          {books[key].map((bookData) => (
             <div
-              key={bookData.item_id}
+              key={bookData}
               className={BooksCardCSS.LessonPanel}
             >
               <div>
@@ -60,7 +64,8 @@ const BooksCard = () => {
                   >
                     Edit
                   </button>
-                  <Button id={bookData.item_id} />
+                  {/* <Button id={bookData.item_id} /> */}
+                  <button type="button" onClick={() => handleDelete(key, bookData.title)}>Delete</button>
                 </div>
               </div>
               <div className={BooksCardCSS.LessonPanel2}>
