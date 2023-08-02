@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const initialState = {
   loading: false,
-  books: [],
+  books: {},
   error: '',
 };
 
@@ -28,10 +28,8 @@ const booksSlice = createSlice({
     builder.addCase(addBook.pending, (state) => {
       state.loading = true;
     });
-    builder.addCase(addBook.fulfilled, (state, action) => {
+    builder.addCase(addBook.fulfilled, (state) => {
       state.loading = false;
-      state.books[action.payload.item_id] = action.payload;
-      state.error = '';
     });
     builder.addCase(addBook.rejected, (state, action) => {
       state.loading = false;
