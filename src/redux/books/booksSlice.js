@@ -24,11 +24,6 @@ export const removeBook = createAsyncThunk('book/removeBook', (dataId) => axios
 const booksSlice = createSlice({
   name: 'book',
   initialState,
-  /* reducers: {
-    removeBook: (state, action) => {
-      state.books = state.books.filter((book) => book.item_id !== action.payload);
-    },
-  }, */
   extraReducers: (builder) => {
     builder.addCase(addBook.pending, (state) => {
       state.loading = true;
@@ -60,7 +55,13 @@ const booksSlice = createSlice({
     });
     builder.addCase(removeBook.fulfilled, (state, action) => {
       state.loading = false;
-      state.books = action.payload;
+      const itemId = action.payload;
+      state.books = Object.keys(state.books).reduce((acc, key) => {
+        if (state.books[key][0].item_id !== itemId) {
+          acc[key] = state.books[key];
+        }
+        return acc;
+      }, {});
       state.error = '';
     });
     builder.addCase(removeBook.rejected, (state, action) => {

@@ -1,16 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useDispatch } from 'react-redux';
-import { removeBook } from 'redux/books/booksSlice';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchBooks, removeBook } from 'redux/books/booksSlice';
 import RemoveButtonCSS from 'components/buttons/styles/RemoveButton.module.css';
 
-const RemoveButton = ({ id }) => {
+const RemoveButton = ({ dataKey }) => {
   const dispatch = useDispatch();
 
-  const handleClick = (event, index = id) => {
+  const handleClick = (event) => {
     event.stopPropagation();
-    dispatch(removeBook(index));
+    dispatch(removeBook(dataKey)).then(() => dispatch(fetchBooks()));
   };
+
+  const { loading, error } = useSelector((state) => state.book);
 
   return (
     <button
@@ -20,12 +22,14 @@ const RemoveButton = ({ id }) => {
       onClick={handleClick}
     >
       Remove
+      {loading ? <span> Loading...</span> : null}
+      {error ? <span>{`Error: ${error}`}</span> : null}
     </button>
   );
 };
 
 RemoveButton.propTypes = {
-  id: PropTypes.string.isRequired,
+  dataKey: PropTypes.string.isRequired,
 };
 
 export default RemoveButton;
