@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
-import { addBook } from 'redux/books/booksSlice';
+import { useDispatch, useSelector } from 'react-redux';
+import { addBook, fetchBooks } from 'redux/books/booksSlice';
 import { v4 as uuid } from 'uuid';
 import Button from 'components/buttons/AddButton';
 import FormCSS from 'components/form/styles/Form.module.css';
 
 function Form() {
   const dispatch = useDispatch();
+  const errorMessage = useSelector((state) => state.book.error);
 
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
@@ -16,7 +17,10 @@ function Form() {
     event.preventDefault();
     dispatch(addBook({
       item_id: uuid(), title, author, category,
-    }));
+    })).then(() => {
+    // The book has been added successfully, now dispatch fetchBooks to get the updated list
+      dispatch(fetchBooks());
+    });
 
     setTitle('');
     setAuthor('');
@@ -26,7 +30,7 @@ function Form() {
   return (
     <div>
       <h2 className={FormCSS.Title}>Add New Book</h2>
-      <form className={FormCSS.form} onSubmit={handleSubmit}>
+      <form action="#" method="post" className={FormCSS.form} onSubmit={handleSubmit}>
         <input
           type="text"
           placeholder="Book title"
@@ -34,6 +38,7 @@ function Form() {
           value={title}
           onChange={(event) => setTitle(event.target.value)}
           className={FormCSS.LessonPanel}
+          required
         />
         <input
           type="text"
@@ -42,6 +47,7 @@ function Form() {
           value={author}
           onChange={(event) => setAuthor(event.target.value)}
           className={FormCSS.LessonPanel}
+          required
         />
         <select
           name="category"
@@ -67,6 +73,13 @@ function Form() {
         </select>
         <Button />
       </form>
+      {errorMessage && (
+      <div>
+        Error:
+        {' '}
+        {errorMessage}
+      </div>
+      )}
     </div>
   );
 }
