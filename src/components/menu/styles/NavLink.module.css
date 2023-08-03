@@ -35,7 +35,7 @@
   font-style: normal;
   line-height: normal;
   letter-spacing: 1.9px;
-  color: #121212;
+  color: var(--black-4);
 
   @media (max-width: 490px) {
     font-size: 0.75rem;
@@ -45,12 +45,8 @@
 .CATEGORIES {
   opacity: 0.5;
   font-size: 0.813rem;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: 1.9px;
-  color: #121212;
+  color: var(--black-4);
 
   @media (max-width: 490px) {
     font-size: 0.75rem;

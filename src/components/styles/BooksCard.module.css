@@ -45,11 +45,7 @@
   opacity: 0.5;
   font-size: 0.875rem;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #121212;
+  color: var(--black-4);
 }
 
 .Title {
@@ -60,11 +56,8 @@
   font-family: 'Roboto Slab', serif;
   font-size: 1.375rem;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: -0.2px;
-  color: #121212;
+  color: var(--black-4);
 }
 
 .Author {
@@ -75,10 +68,6 @@
   font-family: 'Roboto Slab', serif;
   font-size: 0.875rem;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #4386bf;
 }
 
@@ -99,10 +88,6 @@
   font-family: 'Roboto Slab', serif;
   font-size: 0.875rem;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #4386bf;
   padding: 0 1em 0 0;
   border-right: solid 1px var(--white-three);
@@ -136,12 +121,7 @@
 
 .PercentComplete {
   font-size: 2rem;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #121212;
+  color: var(--black-4);
   display: block;
 
   @media (max-width: 1000px) {
@@ -152,12 +132,7 @@
 .Completed {
   opacity: 0.5;
   font-size: 0.875rem;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #121212;
+  color: var(--black-4);
   display: block;
 
   @media (max-width: 1000px) {
@@ -182,11 +157,8 @@
   font-family: 'Roboto Slab', serif;
   font-size: 0.813rem;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #121212;
+  text-transform: uppercase;
+  color: var(--black-4);
   display: block;
 }
 
@@ -194,12 +166,10 @@
   font-family: 'Roboto Slab', serif;
   font-size: 1rem;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: -0.4px;
-  color: #121212;
+  color: var(--black-4);
   display: block;
+  margin: 1rem 0;
 
   @media (max-width: 1000px) {
     margin: 0.2rem 0;
