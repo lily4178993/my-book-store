@@ -1,8 +1,18 @@
 .Rectangle2 {
-  width: 11.5rem;
   height: 2.813rem;
   padding: 0.801rem 1.188rem 0.886rem 1.375rem;
+  margin-right: -1rem;
   border-radius: 3px;
   color: var(--white);
   background-color: var(--azure);
+
+  @media (max-width: 1000px) {
+    width: auto;
+    height: auto;
+    padding: 0.8rem 1.375rem;
+  }
+
+  @media (max-width: 768px) {
+    margin: 1rem 0;
+  }
 }

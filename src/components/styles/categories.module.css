@@ -3,4 +3,8 @@
   text-transform: uppercase;
   color: #bbdefb;
   text-align: center;
+
+  @media (max-width: 460px) {
+    font-size: 1.875rem;
+  }
 }
