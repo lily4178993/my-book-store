@@ -18,7 +18,7 @@
   margin-bottom: 1em;
 
   @media (max-width: 768px) {
-    width: 90vw;
+    width: 83vw;
   }
 
   @media (max-width: 600px) {
