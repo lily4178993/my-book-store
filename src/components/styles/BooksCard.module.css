@@ -44,7 +44,6 @@
   width: 100%;
   max-width: 160px;
   opacity: 0.5;
-  font-family: Montserrat, sans-serif;
   font-size: 0.875rem;
   font-weight: bold;
   font-stretch: normal;
@@ -59,7 +58,7 @@
   max-width: 202px;
   height: auto;
   line-break: strict;
-  font-family: RobotoSlab, sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 1.375rem;
   font-weight: bold;
   font-stretch: normal;
@@ -74,7 +73,7 @@
   max-width: 202px;
   height: auto;
   line-break: strict;
-  font-family: RobotoSlab, sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -98,7 +97,7 @@
 }
 
 .BookAction {
-  font-family: RobotoSlab, sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -137,7 +136,6 @@
 }
 
 .PercentComplete {
-  font-family: Montserrat, sans-serif;
   font-size: 2rem;
   font-weight: normal;
   font-stretch: normal;
@@ -154,7 +152,6 @@
 
 .Completed {
   opacity: 0.5;
-  font-family: Montserrat, sans-serif;
   font-size: 0.875rem;
   font-weight: normal;
   font-stretch: normal;
@@ -183,7 +180,7 @@
 
 .CurrentChapter {
   opacity: 0.5;
-  font-family: RobotoSlab, sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 0.813rem;
   font-weight: 300;
   font-stretch: normal;
@@ -195,7 +192,7 @@
 }
 
 .CurrentLesson {
-  font-family: RobotoSlab, sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 1rem;
   font-weight: 300;
   font-stretch: normal;

@@ -6,7 +6,6 @@
 }
 
 .BookstoreCMS {
-  font-family: Montserrat, sans-serif;
   font-size: 1.875rem;
   font-weight: bold;
   font-stretch: normal;
@@ -30,7 +29,6 @@
 }
 
 .BOOKS {
-  font-family: Montserrat, sans-serif;
   font-size: 0.813rem;
   font-weight: normal;
   font-stretch: normal;
@@ -46,7 +44,6 @@
 
 .CATEGORIES {
   opacity: 0.5;
-  font-family: Montserrat, sans-serif;
   font-size: 0.813rem;
   font-weight: normal;
   font-stretch: normal;
