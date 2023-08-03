@@ -6,6 +6,7 @@
 
 .LessonPanel {
   width: 85vw;
+  max-width: 1070.074px;
   height: auto;
   padding: 2rem 5.688rem 2rem 1.688rem;
   border-radius: 4px;
