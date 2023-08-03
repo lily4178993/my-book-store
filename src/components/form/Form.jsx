@@ -7,7 +7,7 @@ import FormCSS from 'components/form/styles/Form.module.css';
 
 function Form() {
   const dispatch = useDispatch();
-  const errorMessage = useSelector((state) => state.book.error);
+  const { error } = useSelector((state) => state.book);
 
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
@@ -52,7 +52,12 @@ function Form() {
         <select
           name="category"
           value={category}
-          onChange={(event) => setCategory(event.target.value)}
+          onChange={(event) => {
+            if (event) {
+              return setCategory(event.target.value);
+            }
+            return setCategory('Business');
+          }}
           className={FormCSS.LessonPanel2}
         >
           <option value="Business">Business</option>
@@ -73,12 +78,8 @@ function Form() {
         </select>
         <Button />
       </form>
-      {errorMessage && (
-      <div>
-        Error:
-        {' '}
-        {errorMessage}
-      </div>
+      {error && (
+      <p className={FormCSS.Error}>{`Error: ${error}`}</p>
       )}
     </div>
   );

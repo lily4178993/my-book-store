@@ -14,15 +14,34 @@ form * {
 }
 
 .LessonPanel {
-  padding: 0.813rem 20.688rem 0.813rem 1.063rem;
+  padding: 0.813rem 1.063rem 0.813rem;
   border-radius: 4px;
   border: solid 1px var(--white-three);
   background-color: var(--white-two);
+
+  @media (max-width: 1000px) {
+    width: 20vw;
+  }
 }
 
 .LessonPanel2 {
-  padding: 0.813rem 7.688rem 0.813rem 1.063rem;
+  padding: 0.813rem 7.688rem 0.813rem 1rem;
   border-radius: 4px;
   border: solid 1px var(--white-three);
   background-color: var(--white-two);
+
+  @media (max-width: 1000px) {
+    width: 15vw;
+    padding: 0.813rem 0.63rem 0.813rem 0.1rem;
+  }
+}
+
+.Loading {
+  text-align: center;
+  color: #03a9f4;
+}
+
+.Error {
+  text-align: center;
+  color: #e91e63;
 }

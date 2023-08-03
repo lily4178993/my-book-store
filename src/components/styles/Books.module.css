@@ -1,9 +1,14 @@
 .BookstoreCMS {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
   padding: 5.313rem 3.75rem;
   background-color: var(--pale-grey);
 }
 
 .Line {
-  margin: 1.813rem 0;
+  height: 2px;
+  width: 76vw;
   border: solid 1px var(--white-three);
 }

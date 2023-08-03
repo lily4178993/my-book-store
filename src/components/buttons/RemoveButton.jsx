@@ -22,8 +22,8 @@ const RemoveButton = ({ dataKey }) => {
       onClick={handleClick}
     >
       Remove
-      {loading ? <span> Loading...</span> : null}
-      {error ? <span>{`Error: ${error}`}</span> : null}
+      {loading ? <span className={RemoveButtonCSS.Loading}> Please wait...</span> : null}
+      {error ? <span className={RemoveButtonCSS.Error}>{`Error: ${error}`}</span> : null}
     </button>
   );
 };

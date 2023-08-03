@@ -10,3 +10,11 @@
   padding: 0 1em 0 0;
   border-right: solid 1px var(--white-three);
 }
+
+.Loading {
+  color: #03a9f4;
+}
+
+.Error {
+  color: #e91e63;
+}

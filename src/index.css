@@ -46,7 +46,9 @@ code {
     monospace;
 }
 
-button {
+button,
+select {
   border: 1px solid transparent;
   background: transparent;
+  cursor: pointer;
 }

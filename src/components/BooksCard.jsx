@@ -15,15 +15,15 @@ const BooksCard = () => {
 
   const { loading, books, error } = useSelector((state) => state.book);
 
-  if (loading) return (<div>Loading...</div>);
+  if (loading) return (<p className={BooksCardCSS.Load}>Please wait...</p>);
 
-  if (error) return (<div>{`Error: ${error}`}</div>);
+  if (error) return (<p className={BooksCardCSS.Error}>{`Error: ${error}`}</p>);
 
   if (!books || Object.keys(books).length === 0) {
-    return <div>There are no books</div>;
+    return <p className={BooksCardCSS.Load}>There are no books</p>;
   }
   return (
-    <>
+    <div className={BooksCardCSS.BooksContainer}>
       {Object.keys(books).map((key) => (
         <div key={key}>
           {books[key].map((bookData) => (
@@ -86,7 +86,7 @@ const BooksCard = () => {
           ))}
         </div>
       ))}
-    </>
+    </div>
   );
 };
 
