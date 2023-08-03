@@ -9,6 +9,15 @@
   color: #4386bf;
   padding: 0 1em 0 0;
   border-right: solid 1px var(--white-three);
+
+  @media (max-width: 600px) {
+    width: 100%;
+    max-width: 72.156px;
+    border: none;
+    padding: 0;
+    border-top: solid 1px var(--white-three);
+    text-align: left;
+  }
 }
 
 .Loading {

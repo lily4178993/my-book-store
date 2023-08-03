@@ -6,4 +6,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+
+  @media (max-width: 768px) {
+    padding: 1.438rem 1.188rem 1.688rem 1.188rem;
+  }
+
+  @media (max-width: 500px) {
+    height: auto;
+    padding-top: 5rem;
+  }
 }

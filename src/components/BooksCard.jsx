@@ -5,7 +5,7 @@ import BooksCardCSS from 'components/styles/BooksCard.module.css';
 import { fetchBooks } from 'redux/books/booksSlice';
 
 const BooksCard = () => {
-  const percentageCompletion = Math.round(Math.random() * 100);
+  const percentageCompletion = 100;
   const currentChapter = Math.round(Math.random() * 50);
 
   const dispatch = useDispatch();

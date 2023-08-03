@@ -5,6 +5,10 @@
   gap: 1rem;
   padding: 5.313rem 3.75rem;
   background-color: var(--pale-grey);
+
+  @media (max-width: 768px) {
+    padding: 4.313rem 1.75rem;
+  }
 }
 
 .Line {
