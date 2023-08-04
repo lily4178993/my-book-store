@@ -5,7 +5,7 @@
   </div>
 
 #  **Bookstore**
-**Bookstore** is a simple website created using React JS.
+The **Bookstore**, constructed using React and Redux, is a user-friendly website. It empowers users to effortlessly view and manage a curated book collection, offering seamless book additions and removals.
 
 ---
   <br/>
@@ -18,6 +18,7 @@
 - [Built With 🛠](#built-with)
 - [Tech Stack](#tech-stack)
 - [Key Features 🏷️](#key-features)
+- [Screenshot 📷](#screenshot)
 - [Getting Started 💻](#getting-started)
 - [Prerequisites 🧱](#prerequisites)
 - [Setup ⚙️](#setup)
@@ -52,6 +53,15 @@
 - _Remove a selected book_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+<br>
+
+---
+<!-- SCREENSHOT -->
+### **Screenshot 📷**<a name="screenshot"></a><br>
+
+![Bookstore screenshot](https://github.com/lily4178993/my-book-store/assets/101261047/6234bee2-40b0-4f8f-a6c2-213530703d58)
+
+
 <br>
 
 ---
