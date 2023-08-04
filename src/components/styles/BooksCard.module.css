@@ -1,0 +1,205 @@
+.BooksContainer {
+  height: auto;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.LessonPanel {
+  width: 85vw;
+  max-width: 1070.074px;
+  height: auto;
+  padding: 2rem 5.688rem 2rem 1.688rem;
+  border-radius: 4px;
+  border: solid 1px var(--white-three);
+  background-color: var(--white-two);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+
+  @media (max-width: 768px) {
+    width: 83vw;
+  }
+
+  @media (max-width: 600px) {
+    align-items: flex-end;
+  }
+}
+
+.LessonPanel2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1em;
+  }
+}
+
+.SchoolOf {
+  width: 100%;
+  max-width: 160px;
+  opacity: 0.5;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: var(--black-4);
+}
+
+.Title {
+  width: 100%;
+  max-width: 202px;
+  height: auto;
+  line-break: strict;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.375rem;
+  font-weight: bold;
+  letter-spacing: -0.2px;
+  color: var(--black-4);
+}
+
+.Author {
+  width: 100%;
+  max-width: 202px;
+  height: auto;
+  line-break: strict;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #4386bf;
+}
+
+.BookActionBox {
+  display: flex;
+  gap: 1em;
+  margin-top: 1em;
+
+  @media (max-width: 600px) {
+    gap: 0;
+    margin-top: 2em;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.BookAction {
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #4386bf;
+  padding: 0 1em 0 0;
+  border-right: solid 1px var(--white-three);
+
+  @media (max-width: 600px) {
+    width: 100%;
+    max-width: 72.156px;
+    border: none;
+    padding: 0;
+    border-top: solid 1px var(--white-three);
+    text-align: left;
+  }
+}
+
+.CompletionPercentageBox {
+  display: flex;
+  gap: 1em;
+}
+
+.Oval2 {
+  width: 4.25rem;
+  height: 4.25rem;
+  border: solid 5px var(--medium-blue);
+  border-radius: 50%;
+
+  @media (max-width: 1000px) {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+}
+
+.PercentComplete {
+  font-size: 2rem;
+  color: var(--black-4);
+  display: block;
+
+  @media (max-width: 1000px) {
+    font-size: 1.5rem;
+  }
+}
+
+.Completed {
+  opacity: 0.5;
+  font-size: 0.875rem;
+  color: var(--black-4);
+  display: block;
+
+  @media (max-width: 1000px) {
+    font-size: 0.8rem;
+  }
+}
+
+.Line2 {
+  width: 0.125rem;
+  height: 4.375rem;
+  margin: 0 0 0 2rem;
+  border: solid 1px var(--white-three);
+
+  @media (max-width: 1000px) {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.CurrentChapter {
+  opacity: 0.5;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: var(--black-4);
+  display: block;
+}
+
+.CurrentLesson {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: -0.4px;
+  color: var(--black-4);
+  display: block;
+  margin: 1rem 0;
+
+  @media (max-width: 1000px) {
+    margin: 0.2rem 0;
+  }
+}
+
+.Rectangle2 {
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border-radius: 3px;
+  background-color: var(--azure);
+  color: var(--white);
+  text-transform: uppercase;
+
+  @media (max-width: 1000px) {
+    padding: 0.438rem 1rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 0.6rem;
+    padding: 0.3rem;
+  }
+}
+
+.Load {
+  text-align: center;
+  color: #03a9f4;
+}
+
+.Error {
+  text-align: center;
+  color: #e91e63;
+}

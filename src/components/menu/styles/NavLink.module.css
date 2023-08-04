@@ -1,0 +1,54 @@
+.menu {
+  display: flex;
+  gap: 1.5em;
+  align-items: center;
+  justify-content: center;
+}
+
+.BookstoreCMS {
+  font-size: 1.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--azure);
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  @media (max-width: 500px) {
+    position: absolute;
+    top: 1em;
+    width: 90%;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--azure);
+  }
+}
+
+.BOOKS {
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: var(--black-4);
+
+  @media (max-width: 490px) {
+    font-size: 0.75rem;
+  }
+}
+
+.CATEGORIES {
+  opacity: 0.5;
+  font-size: 0.813rem;
+  letter-spacing: 1.9px;
+  color: var(--black-4);
+
+  @media (max-width: 490px) {
+    font-size: 0.75rem;
+  }
+}
